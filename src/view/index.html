@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nico Coloma-Cook</title>
+    <!--Use external css always-->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <!--Pushes everything to LHS with corresponding css styling-->
+    <div class="container">
+        <header id="main-header">
+            <h1>Nico Coloma-Cook</h1>
+        </header>
+            <ul>
+                <li>Email</li>
+                <!--"_blank" opens new tab so users don't leave your site, only use for EXTERNAL SITE, not just another
+                page-->
+                <li> <a href="https://www.linkedin.com/in/nicolascolomacook/" target="_blank">LinkedIn</a> </li>
+                <li><a href="https://github.com/ndcolomacook17" target="_blank">Github</a></li>
+            </ul>
+        <h1>Welcome to the site!</h1>
+        <p>I just graduated Williams College with a BA in physics and economics. I'm very fascinated in quantum computation 
+            and data science. This is where you can find all of my major projects completed in areas ranging from potential 
+            quantum algorithms for today's quantum devices to traffic analytics on the Ethereum network. In my free time I 
+            love to run, lift weights, and play basketball! I'm originally from Boston but am more than willing (and very 
+            excited) to explore new parts of the U.S.</p>
+        <h2 class="project-list">Projects</h2>
+            <ul>
+                <li>project 1</li>
+                <li>project 2</li>
+                <li>project 3</li>
+                <li>project 4</li>
+            </ul>
+
+        <h2>Technical Skills</h2>
+            <ul>
+                <li>PLs</li>
+                <li>Frmwks, libs</li>
+                <li>Tools</li>
+            </ul>
+        
+        <!--hr is horizontal line added-->
+        <hr>
+        <h1>Non-academic interests</h1>
+            <!--Ordered list-->
+            <ol>
+                <li>Fitness</li>
+                <li>Physics</li>
+                <li>Traveling with friends</li>
+            </ol>
+        
+        <!--Contact form-->
+        <br>
+        <hr>
+        <!--action="filepath" has to do with db, server side stuff-->
+        <form action="process.php" class="contact-form">
+            <div class="contact-form-parts">
+                <label>First Name</label>
+                <input type="text" name="firstName" placeholder="Enter First Name" >
+            </div>
+            <div>
+                <label >Last Name</label>
+                <input type="text" name="lastName" placeholder="Enter Last Name" >
+            </div>
+            <div class="contact-form-parts">
+                <label >Email</label>
+                <input type="email" name="userEmail" placeholder="Enter Main">
+            </div class="contact-form-parts">
+            <div>
+                <label >Additional Info</label>
+                <textarea name="message" cols="30" rows="10"></textarea>
+            </div>
+            <div class="contact-form-parts">
+                <input type="submit" name="submitBtn" ></input>
+            </div>
+        </form>
+        <button>More info on me</button>
+
+        <!--Footer-->
+        <footer id="main-footer">
+            Footer stuff, Cool logos- &copy; &copysr; &copf;
+        </footer>
+    </div>
+</body>
+</html>

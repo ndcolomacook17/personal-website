@@ -1,0 +1,67 @@
+/* Use hex for colors? */
+/*Put global/reusable classes at top */
+
+.clr{
+    clear: both;
+}
+
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:crimson;
+    font-size: larger;
+    font-weight: normal;
+    /*Same as above 
+    font: normal larger Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    */
+    line-height: 1.7em;
+}
+
+/* Use '.class-name' to target class */
+.project-list {
+    background-color: bisque;
+    color:blue;
+    border: 5px red dashed;
+    /*For curved edges*/
+    border-radius: 15px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.container{ 
+    /*Use percentages*/
+    width: 80%;
+    margin:auto;
+}
+
+/*Link styling*/
+a{ 
+    /*Remove underline*/
+    text-decoration: none;
+    /*Change color*/
+    color: darkolivegreen;
+}
+
+/*For hovering over link, could maybe do better with React?*/
+a:hover{
+    color:red;
+}
+
+.contact-form{ 
+    background-color: lightgray;
+}
+
+.contact-form .contact-form-parts {
+    padding-bottom: 15px;
+}
+
+/*Putting fields on new line*/
+.contact-form label{ 
+    display: block;
+}
+
+/*Targeting certain components*/
+.contact-form input[type="submit"] {
+    background-color: lightblue;
+    color: black;
+    border-radius: 15px;
+}
