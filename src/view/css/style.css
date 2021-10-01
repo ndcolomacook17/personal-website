@@ -1,36 +1,46 @@
-/* Use hex for colors? */
 /*Put global/reusable classes at top */
 
+/* TODO: Understand what this is */
 .clr{
     clear: both;
 }
 
-p {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:crimson;
-    font-size: larger;
-    font-weight: normal;
-    /*Same as above 
-    font: normal larger Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    */
-    line-height: 1.7em;
+.container{ 
+    /*Use percentages*/
+    /*width: 80%; this is for entire page  */
+    margin:auto;
+}
+
+/* Use '#id-name' to target id*/
+#main-header{ 
+    background-color: #f4f4f4;
+    /* padding: 1rem; */
+    border-radius: 5px;
+    text-align: center;
 }
 
 /* Use '.class-name' to target class */
-.project-list {
-    background-color: bisque;
+.non-main-header {
+    background-color: #f4f4f4;
     color:blue;
-    border: 5px red dashed;
+    /* border: 5px red dashed; */
     /*For curved edges*/
     border-radius: 15px;
     text-decoration: underline;
     text-align: center;
 }
 
-.container{ 
-    /*Use percentages*/
-    width: 80%;
-    margin:auto;
+/* Since there's no '.' operator, this is for ALL p tags */
+p {
+    font-family:'Times New Roman', Times, serif;
+    color: blue;
+    font-size: larger;
+    font-weight: normal;
+    /*Same as above 
+    font: normal larger Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    */
+    line-height: 1.7em;
+    background-color: #f4f4f4;
 }
 
 /*Link styling*/
@@ -38,12 +48,31 @@ a{
     /*Remove underline*/
     text-decoration: none;
     /*Change color*/
-    color: darkolivegreen;
+    color: blue;
 }
 
 /*For hovering over link, could maybe do better with React?*/
 a:hover{
-    color:red;
+    color: coral;
+}
+
+.projects-list {
+    text-align: center;
+    color: gray;
+
+}
+
+/*TODO: Make these cleaner, don't need to repeat same code for all projects */
+.weight-tracker-app:hover {
+    color: coral;
+}
+
+.ethereum-dapp:hover {
+    color: coral;
+}
+
+.velkamp-model:hover {
+    color: coral;
 }
 
 .contact-form{ 
@@ -61,7 +90,20 @@ a:hover{
 
 /*Targeting certain components*/
 .contact-form input[type="submit"] {
-    background-color: lightblue;
-    color: black;
-    border-radius: 15px;
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    border: 0;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.contact-form input[type="submit"]:hover {
+    color: gray;
+}
+
+#main-footer {
+    background-color: pink;
 }

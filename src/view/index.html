@@ -14,29 +14,38 @@
     <div class="container">
         <header id="main-header">
             <h1>Nico Coloma-Cook</h1>
-        </header>
-            <ul>
+
+            <!--TODO: Display as coumns/horizontally-->
+            <ul class="main-header-links">
                 <li>Email</li>
                 <!--"_blank" opens new tab so users don't leave your site, only use for EXTERNAL SITE, not just another
                 page-->
                 <li> <a href="https://www.linkedin.com/in/nicolascolomacook/" target="_blank">LinkedIn</a> </li>
                 <li><a href="https://github.com/ndcolomacook17" target="_blank">Github</a></li>
             </ul>
-        <h1>Welcome to the site!</h1>
+        </header>
+
+        <hr>
+        <h1>Welcome</h1>
         <p>I just graduated Williams College with a BA in physics and economics. I'm very fascinated in quantum computation 
             and data science. This is where you can find all of my major projects completed in areas ranging from potential 
             quantum algorithms for today's quantum devices to traffic analytics on the Ethereum network. In my free time I 
             love to run, lift weights, and play basketball! I'm originally from Boston but am more than willing (and very 
             excited) to explore new parts of the U.S.</p>
-        <h2 class="project-list">Projects</h2>
-            <ul>
-                <li>project 1</li>
-                <li>project 2</li>
-                <li>project 3</li>
-                <li>project 4</li>
-            </ul>
+        
+        <hr>
+        <h2 class="non-main-header">Projects</h2>
 
-        <h2>Technical Skills</h2>
+            <!--TODO: Display as coumns/horizontally-->
+            <div class="projects-list">
+                <h3 class="weight-tracker-app">Weight Tracker/Forecaster & Food Suggester App</h3>
+                <h3 class="ethereum-dapp">Ethereum Dapp</h3>
+                <h3 class="velkamp-model">Velkamp Macroeconomic Model Numerical Analysis</h3>
+
+            </div>
+
+        <hr>
+        <h2 class="non-main-header">Technical Skills</h2>
             <ul>
                 <li>PLs</li>
                 <li>Frmwks, libs</li>
@@ -45,7 +54,7 @@
         
         <!--hr is horizontal line added-->
         <hr>
-        <h1>Non-academic interests</h1>
+        <h2 class="non-main-header">Other interests</h2>
             <!--Ordered list-->
             <ol>
                 <li>Fitness</li>
@@ -54,8 +63,8 @@
             </ol>
         
         <!--Contact form-->
-        <br>
         <hr>
+        <h2 class="non-main-header">Contact Me</h2>
         <!--action="filepath" has to do with db, server side stuff-->
         <form action="process.php" class="contact-form">
             <div class="contact-form-parts">
